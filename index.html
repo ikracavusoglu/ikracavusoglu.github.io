@@ -63,28 +63,18 @@
             <label for="schoolId">School Number:</label>
             <input type="text" id="schoolId" name="schoolId" value="2230357106" readonly>
 
-            <label for="assignment1">Homework 1:</label>
-            <a href="homework1.c" download> İndir </a>
-            <input type="file" id="assignment1" name="assignment1" required>
-
-            <label for="assignment2">Homework 2 2:</label>
-            <a href="homework2.c" download> İndir </a>
-            <input type="file" id="assignment2" name="assignment2" required>
-
-            <label for="assignment3">Homework 3 3:</label>
-            <a href="homework3.c" download> İndir </a>
-            <input type="file" id="assignment3" name="assignment3" required>
-
-            <button type="submit">Gönder</button>
+            <label for="assignment1">For Homeworks:</label>
+            <div id="website" style="border: 1px solid #ccc; padding: 8px; cursor: pointer;" onclick="window.open('https://github.com/ikracavusoglu/ikracavusoglu.github.io/edit/main/styles.css', '_blank')">
+               OPEN
+            </div>
+            
         </form>
     </div>
 
-    <script>
-        document.getElementById('infoForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert("Bilgileriniz ve ödevleriniz başarıyla gönderildi!");
-            // Burada form verilerinizi bir yere kaydedebilir ya da başka işlemler yapabilirsiniz.
-        });
-    </script>
+
 </body>
 </html>
+          
+
+
+           
