@@ -3,24 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İkra Çavuşoğlu - Electrical Electronic Engineering Student</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>İkra Çavuşoğlu - Elektrik ve Elektronik Mühendisliği</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>İkra Çavuşoğlu</h1>
-            <p>Electrical Electronic Engineering Student</p>
-        </header>
+        <h2>İkra Çavuşoğlu - Elektrik ve Elektronik Mühendisliği</h2>
+        <p>Okul Numarası: 2230357106</p>
+        <form id="infoForm">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" value="İkra" readonly>
 
-        <section class="homework-box">
-            <h2>Homework</h2>
-            <textarea placeholder="Ödevinizin içeriğini buraya yazabilirsiniz..."></textarea>
-        </section>
+            <label for="surname">Soyadınız:</label>
+            <input type="text" id="surname" name="surname" value="Çavuşoğlu" readonly>
 
-        <footer>
-            <p>School Number: 2230357106</p>
-        </footer>
+            <label for="schoolId">Okul Numaranız:</label>
+            <input type="text" id="schoolId" name="schoolId" value="2230357106" readonly>
+
+            <label for="assignment1">Ödev 1:</label>
+            <input type="file" id="assignment1" name="assignment1" required>
+
+            <label for="assignment2">Ödev 2:</label>
+            <input type="file" id="assignment2" name="assignment2" required>
+
+            <label for="assignment3">Ödev 3:</label>
+            <input type="file" id="assignment3" name="assignment3" required>
+
+            <button type="submit">Gönder</button>
+        </form>
     </div>
+
+    <script>
+        document.getElementById('infoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Bilgileriniz ve ödevleriniz başarıyla gönderildi!");
+            // Burada form verilerinizi bir yere kaydedebilir ya da başka işlemler yapabilirsiniz.
+        });
+    </script>
 </body>
 </html>
