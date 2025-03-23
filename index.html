@@ -11,42 +11,58 @@
             padding: 0;
             background-color: #f4f4f4;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             height: 100vh;
         }
         .container {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             width: 400px;
-        }
-        h2 {
             text-align: center;
         }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
         label {
+            text-align: left;
             display: block;
             margin-top: 10px;
+            font-size: 14px;
+            color: #555;
         }
-        input[type="text"], input[type="file"] {
-            width: 100%;
-            padding: 10px;
+        input[type="text"] {
+            text-align: center;
+            width: 80%;
+            padding: 12px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: 16px;
         }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container div {
+            background-color: #7485d8;
             color: white;
-            border: none;
+            font-size: 16px;
+            padding: 12px;
+            margin: 10px 0;
             border-radius: 4px;
             cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
         }
-        button:hover {
-            background-color: #45a049;
+        .button-container div:hover {
+            background-color: #447fba;
+        }
+        .button-container div:active {
+            background-color: #3e428e;
         }
     </style>
 </head>
@@ -64,17 +80,14 @@
             <input type="text" id="schoolId" name="schoolId" value="2230357106" readonly>
 
             <label for="assignment1">For Homeworks:</label>
-            <div id="website" style="border: 1px solid #ccc; padding: 8px; cursor: pointer;" onclick="window.open('https://github.com/ikracavusoglu/ikracavusoglu.github.io/edit/main/styles.css', '_blank')">
-               OPEN
+            <div class="button-container">
+                <div onclick="window.open('https://github.com/ikracavusoglu/ikracavusoglu.github.io/edit/main/styles.css', '_blank')">
+                    CLICK
+                </div>
             </div>
-            
         </form>
     </div>
-
-
 </body>
 </html>
-          
-
-
-           
+            
+       
